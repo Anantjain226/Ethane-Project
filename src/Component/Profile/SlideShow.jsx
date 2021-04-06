@@ -29,7 +29,7 @@ export const SlideShow = ({currentData, onClick, history,like, nope, superLike, 
       console.log(data)
     return (
         <div >
-          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 800px"}} >
+          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 720px"}} >
             <div>
               <div style={contentStyle}> 
                     <div style = {{backgroundImage: `url(${data.imgSrc[0]})`, height: "450px", width: "300px", borderRadius: 10}} >
@@ -81,7 +81,7 @@ export const SlideShow = ({currentData, onClick, history,like, nope, superLike, 
     else if(data && like){
         return(
             <div >
-          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 800px"}} >
+          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 720px"}} >
             <div>
               <div style={contentStyle}> 
                     <div style = {{backgroundImage: `url(${data.imgSrc[0]})`, height: "450px", width: "300px", borderRadius: 10, paddingTop: 50}} >
@@ -136,7 +136,7 @@ export const SlideShow = ({currentData, onClick, history,like, nope, superLike, 
     else if(data && nope){
         return(
             <div >
-          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 800px"}} >
+          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 720px"}} >
             <div>
               <div style={contentStyle}> 
                     <div style = {{backgroundImage: `url(${data.imgSrc[0]})`, height: "450px", width: "300px", borderRadius: 10, paddingTop: 50}} >
@@ -191,7 +191,7 @@ export const SlideShow = ({currentData, onClick, history,like, nope, superLike, 
     else if(data && superLike){
         return(
             <div >
-          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 800px"}} >
+          <Carousel dotPosition={dotPosition} style = {{width: 300, margin: "0px 0px 0px 720px"}} >
             <div>
               <div style={contentStyle}> 
                     <div style = {{backgroundImage: `url(${data.imgSrc[0]})`, height: "450px", width: "300px", borderRadius: 10, paddingTop: 200}} >
