@@ -64,7 +64,7 @@ export class DataContextProvider extends Component {
     }=payload
       console.log("wowoow")
 
-      axios.post("http://localhost:3004/profiles",{
+      axios.post("https://my-tinder-clone-db.herokuapp.com/profiles",{
         username,
         password,
         first_name,
@@ -91,7 +91,7 @@ export class DataContextProvider extends Component {
     componentDidMount() {
         this.setState({ isLoading: true })
         axios
-          .get(`http://localhost:3004/profiles`)
+          .get(`https://my-tinder-clone-db.herokuapp.com/profiles`)
           .then((res) => {
             this.setState({
             entireData: [...res.data],
